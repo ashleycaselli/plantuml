@@ -1,7 +1,6 @@
 let publishCmd = `
-IMAGE_NAME_LOWER=$(echo "$IMAGE_NAME" | tr '[:upper:]' '[:lower:]')
-docker build -t "$REGISTRY/$IMAGE_NAME_LOWER:\${nextRelease.version}" -t "$REGISTRY/$IMAGE_NAME_LOWER:latest" .
-docker push --all-tags "$REGISTRY/$IMAGE_NAME_LOWER"
+docker build -t "$IMAGE_NAME:\${nextRelease.version}" -t "$IMAGE_NAME:latest" .
+docker push --all-tags "$IMAGE_NAME"
 `
 let config = require('semantic-release-preconfigured-conventional-commits');
 config.plugins.push(
