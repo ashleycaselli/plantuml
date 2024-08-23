@@ -15,3 +15,5 @@ RUN \
 WORKDIR /plantuml
 
 ENTRYPOINT ["java", "-Djava.awt.headless=true", "-jar", "/plantuml/plantuml.jar", "-p"]
+
+CMD ["-tsvg"]
