@@ -1,11 +1,11 @@
 # PlantUML meets Docker
 
 <p align="center">
-    <img alt="Docker Cloud Automated build" src="https://img.shields.io/docker/cloud/automated/aplr/plantuml">
-    <img alt="Docker Cloud Build Status" src="https://img.shields.io/docker/cloud/build/aplr/plantuml">
-    <img alt="Docker Image Size" src="https://img.shields.io/docker/image-size/aplr/plantuml">
-    <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/aplr/plantuml">
-    <img alt="Docker Image Version (latest semver)" src="https://img.shields.io/docker/v/aplr/plantuml">
+    <img alt="Docker Cloud Automated build" src="https://img.shields.io/docker/cloud/automated/ashleycaselli/plantuml">
+    <img alt="Docker Cloud Build Status" src="https://img.shields.io/docker/cloud/build/ashleycaselli/plantuml">
+    <img alt="Docker Image Size" src="https://img.shields.io/docker/image-size/ashleycaselli/plantuml">
+    <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/ashleycaselli/plantuml">
+    <img alt="Docker Image Version (latest semver)" src="https://img.shields.io/docker/v/ashleycaselli/plantuml">
 </p>
 
 This docker container holds a full-fledged plantuml distribution with PDF-export support included.
@@ -23,11 +23,11 @@ java -jar plantuml.jar -p
 When run without any more arguments, the docker image will output the diagram as svg:
 
 ```bash
-cat diagram.puml | docker run --rm -i aplr/plantuml > diagram.svg
+cat diagram.puml | docker run --rm -i ashleycaselli/plantuml > diagram.svg
 ```
 
 If you want to output the diagram as PDF, you have to set the output type to `-tpdf`:
 
 ```bash
-cat diagram.puml | docker run --rm -i aplr/plantuml -tpdf > diagram.pdf
+cat diagram.puml | docker run --rm -i ashleycaselli/plantuml -tpdf > diagram.pdf
 ```
