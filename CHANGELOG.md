@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/ashleycaselli/plantuml/compare/1.0.0...1.0.1) (2024-08-23)
+
+### Bug Fixes
+
+* remove registry prefix from image name ([0e9b6e6](https://github.com/ashleycaselli/plantuml/commit/0e9b6e671803bf2836fdcbb3217892c81df49113))
+
 ## 1.0.0 (2024-08-23)
 
 ### Features
